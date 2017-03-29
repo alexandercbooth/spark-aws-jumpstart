@@ -1,12 +1,14 @@
 # Spark or: How I learned to Stop Worrying and Love Big Data
 ![](images/spark-logo-trademark.png)
 
-## [Module I](01-Module-I.md)
+## [Module I](01-Module-1.md)
 In the first part, we are going to have the following goals:
 1. signup for aws
 2. configure aws
 3. launch a spark cluster
 4. spark basics
+
+HW 1: Run the notebook on your own cluster and append a screenshot of it completed inside your cluster as a markdown cell.
 
 ## Submitting HW
 We will use the git workflow for submitting HW (it's pass or fail)
