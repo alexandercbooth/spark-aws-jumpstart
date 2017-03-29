@@ -81,7 +81,7 @@ aws emr create-default-roles
 Our cluster should be launched now and we can check its status with,
 
 ```bash
-aws emr decribe-cluster --cluster-id $clusterId
+aws emr describe-cluster --cluster-id $clusterId
 ```
 
 Now set the security group id of master in an environment variable,
@@ -107,7 +107,7 @@ Once, ssh'ed in,
 conda
 ```bash
 wget https://raw.githubusercontent.com/alexandercbooth/spark-aws-jumpstart/master/scripts/installs.sh
-sh installs.sh
+. installs.sh
 ```
 
 ### Download the notebook
