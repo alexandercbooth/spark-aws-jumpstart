@@ -14,12 +14,27 @@ pip install awscli
 __Note__: you will have to provide a credit card in order to use ec2
 - create a user in IAM
 - set user permissions to admin
-- create key-pair and download credentials
+- download user credentials
 - run configuration for aws-cli
 ```bash
 aws configure
 ```
-And enter your key id, secret key, for region: us-west-2, text
+```
+And enter your:
+key id
+secret key
+for region: us-west-2
+text
+```
+
+## Create a key-pair for authentication
+1. Open up ec2 from the aws console and click on `Key Pairs`.
+2. Create a new key pair and keep note of it's name. This will automatically download the key to your computer.
+3. Move the file to your home directory. If you named your key `stella-key`, it would look like this.
+```bash
+mv ~/Downloads/stella-key.pem
+```
+___N.B.___ If your computer auto downloads to another location, say the desktop, make sure to replace the `~/Downloads` with the appropriate path.
 
 ### aws VPC or, your own private paradise
 To setup a VPC on aws, we need to,
