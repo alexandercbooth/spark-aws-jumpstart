@@ -8,7 +8,7 @@ In the first part, we are going to have the following goals:
 3. launch a spark cluster
 4. spark basics
 
-HW 1: Run the notebook on your own cluster and append a screenshot of it completed inside your cluster as a markdown cell.
+HW 1: Configure aws and fire up a :collision: cluster. Take a screen shot of the cluster up and running and save it a markdown file `HW-01-yourname.md` inside the submission folder. Then use the submission procedure below for submitting.
 
 ## Submitting HW
 We will use the git workflow for submitting HW (it's pass or fail)
