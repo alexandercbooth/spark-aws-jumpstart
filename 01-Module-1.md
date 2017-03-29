@@ -6,7 +6,7 @@ First, we are going to need to take care of some logistics. Don't panic.
 - if you have UNIX, you goood... otherwise, install [cygwin](https://www.cygwin.com/)
 - [aws cli](https://github.com/aws/aws-cli)
 ```bash
-pip install aws-cli
+pip install awscli
 ```
 
 ## Configure aws
