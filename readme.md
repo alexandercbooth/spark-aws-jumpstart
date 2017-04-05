@@ -15,13 +15,14 @@ We will use the git workflow for submitting HW (it's pass or fail)
 1. fork the repo on github
 2. clone it from your name
 `git clone http://github.com/your-gh-name/spark-aws-jumpstart.git`
-3. create and checkout feature branch
+3. change directory `cd spark-aws-jumpstart`
+4. create and checkout feature branch
 `git checkout -b yourName-hw`
-4. complete the assignment and stage your chages
+5. complete the assignment and stage your chages
 `git add my-file`
-5. commit with proper commit message
+6. commit with proper commit message
 `git commit -m "chore: adding assignment 1"`
-6. push your changes to your repo
+7. push your changes to your repo
 `git push origin yourName-hw`
-7. open a PR on github and submit
-8. party time :tada:
+8. open a PR on github and submit
+9. party time :tada:
