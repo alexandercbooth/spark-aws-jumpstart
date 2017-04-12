@@ -36,6 +36,12 @@ mv ~/Downloads/stella-key.pem
 ```
 ___N.B.___ If your computer auto downloads to another location, say the desktop, make sure to replace the `~/Downloads` with the appropriate path.
 
+4. Store keyName in environment variable.
+```bash
+export keyName=stella-key
+```
+Where `stella-key` is what ever you have named your key.
+
 ### aws VPC or, your own private paradise
 To setup a VPC on aws, we need to,
 - create VPC
@@ -91,7 +97,7 @@ aws emr create-default-roles
 ```
 - we can launch a cluster from the aws-cli, making sure to include our key.pem and subnetId (which will create it in our VPC)
 ```bash
-. create-cluster
+. create-cluster.sh
 ```
 Our cluster should be launched now and we can check its status with,
 
