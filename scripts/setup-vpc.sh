@@ -1,6 +1,5 @@
 # Create VPC
 export vpcId=`aws ec2 create-vpc --cidr-block 10.0.0.0/28 --query 'Vpc.VpcId' --output text`
-
 # Enable DNS
 aws ec2 modify-vpc-attribute --vpc-id $vpcId --enable-dns-support "{\"Value\":true}"
 aws ec2 modify-vpc-attribute --vpc-id $vpcId --enable-dns-hostnames "{\"Value\":true}"
@@ -25,4 +24,10 @@ aws ec2 create-route --route-table-id $routeTableId --destination-cidr-block 0.0
 
 echo $subnetId
 echo $vpcId
+
+echo \# Connect to your cluster: > $clusterVars.env # overwrite existing file
+echo export subnetId=$subnetId >> $clusterVars.env
+echo export routeTableId=$routeTableId >> $clusterVars.env
+echo export vpcId=$vpcId >> $clusterVars.env
+echo export internetGatewayId=$internetGatewayId >> $clusterVars.env
 echo "Don't forget to get the security group ids and authorize ssh and jupyter"
