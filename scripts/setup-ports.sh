@@ -1,3 +1,5 @@
+export securityGroupId="$(aws emr describe-cluster --cluster-id $clusterId | grep sg- | awk '{print $4}')"
+
 # Setup ingress port
 aws ec2 authorize-security-group-ingress --group-id $securityGroupId --protocol tcp --port 22 --cidr 0.0.0.0/0
 
