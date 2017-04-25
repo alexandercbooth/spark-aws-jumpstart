@@ -43,7 +43,7 @@ export keyName=stella-key
 Where `stella-key` is what ever you have named your key.
 
 ### aws VPC or, your own private paradise
-To setup a VPC on aws, we need to,
+To setup a VPC on aws, we need to do the following things. To do them all at once, use the script I have provided [here](scripts/setup-vpc.sh).
 - create VPC
 ```bash
 export vpcId=`aws ec2 create-vpc --cidr-block 10.0.0.0/28 --query 'Vpc.VpcId' --output text`
@@ -103,11 +103,6 @@ Our cluster should be launched now and we can check its status with,
 
 ```bash
 aws emr describe-cluster --cluster-id $clusterId
-```
-
-Now set the security group id of master in an environment variable,
-```bash
-export securityGroupId=whatever-your-id-is
 ```
 - finally, open up the ports on master,
 ```bash
